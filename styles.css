@@ -1,0 +1,173 @@
+html, body {
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 calc((100% - 80rem) / 2);
+}
+
+.centered-layout > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  background-color: #d6e611;
+  height: 24rem;
+  overflow: auto;
+  background-image: url("images/Logo.png");
+  background-size: 34%;
+  background-repeat:  repeat-x,no-repeat;
+  background-position: 50%;
+  flex-shrink: 0;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  opacity: 93%;
+}
+
+header h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0 0 7px 7px;
+}
+
+nav {
+  background-color: #EEE;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1.6rem 0;
+}
+
+nav ul li a {
+  padding: 1.6rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+nav ul li a:hover {
+  background-color: #DDD;
+}
+
+footer {
+  line-height: 4rem;
+  background-color: #DDD;
+}
+
+main {
+  margin: 2rem 0;
+  flex-grow: 1;
+}
+
+.activity {
+  margin: 0 0 5rem 0;
+}
+
+.slogan {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+  width: 90%;
+}
+
+.slogan p {
+  width: 44rem;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.activity {
+  position: relative;
+  padding: 0;
+}
+
+.activity img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.activity > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 3rem;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+
+.activity div div {
+  width: 40%;
+  font-size: 1.6rem;
+}
+
+.activity.left > div {
+  justify-content: flex-start;
+  padding-left: 3rem;
+  background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0));
+}
+.opening_hours_outer{
+  display: flex;
+  justify-content: center;
+}
+.opening_hours{
+  margin: 1rem;
+  width:240px;
+  border: red solid 5px;
+}
+table, tr, th{
+  margin-left: auto;
+  margin-right: auto;
+  border: dashed black 1px;
+  border-collapse: collapse;
+}
+th{
+  padding: 1rem;  
+}
+.petitionsButton{
+  background-color: black;
+  color: white;
+  margin-top: 0.1px;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 0px;
+  border-radius: 12px;
+}
+.petitionsButton:hover{
+  color: #DDD;
+}
+a{
+  margin: 3rem;
+}
